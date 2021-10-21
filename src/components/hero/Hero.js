@@ -75,10 +75,9 @@ export default () => {
             <Heading>
               <span></span>
               <br />
-              <SlantedBackground>Safe, Secured, Solution</SlantedBackground>
+              <SlantedBackground>Building Solutions To Tomorrow's Challenges Today</SlantedBackground>
             </Heading>
           </LeftColumn>
-           
         </TwoColumn>
       </HeroContainer>
     </Container>

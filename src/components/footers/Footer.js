@@ -42,7 +42,11 @@ export default () => {
             <Link href="/#about">About</Link>
             <Link href="/#features">Features</Link>
             <Link href="/#solution">Our Solutions</Link>
-            <Link href="/#contact">Contact Us</Link>
+          </LinksContainer>
+          <LinksContainer>
+            <Link href="#"> samuel@aiq.ng</Link>
+            <Link href="/#about">mosho@aiq.ng</Link>
+            <Link href="/#features">+2347080807085</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">

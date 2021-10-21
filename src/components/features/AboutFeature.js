@@ -6,7 +6,7 @@ import StatsIllustrationSrc from "images/stats-illustration.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
+const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-0 md:py-4`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
 const TextColumn = styled(Column)(props => [
@@ -43,7 +43,7 @@ export default ({
       AI intelligence <wbr /> Solution <span tw="text-primary-500">.</span>
     </>
   ),
-  description = "AIQ is a start-up that focuses on providing artificial Intelligent solution for defence oriented solutions. Security safety and Survelliance are major focus areas where AIQ as a brand aligns a huge measure of its interest. By providing professional services for both domestic and foreign oriented industries, government agencies and individuals AIQ stands out as the most trusted and reliable soucre for secured interactions ",
+  description = "AIQ is a start-up that focuses on providing artificial Intelligent solution for defence oriented solutions. Security safety and Survelliance are major focus areas where AIQ as a brand aligns a huge measure of its interest. By providing professional services for both domestic and foreign oriented industries, government agencies and individuals AIQ stands out as the most trusted and reliable soucre for secured interactions AIQ LIMITED is a Nigerian provider of efficient defence and intelligence solutions on geospatial artificial intelligence and other related technologies. AIQ Limited assists in reducing an gradually eliminating the defence and intelligence sectors reliance on foreign technologies by developing homegrown solutions that can match international alternatives. To provide solutions to the force, policy makers and the intelligence community in planning, managing and executing intelligence activities, we employ a diversified workforce adept in artificial intelligence, computing, trend tracking and analytics. AIQ is a provider of earth imagery to customers at an inexpensive cost to facilitate better national and global decision making.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = StatsIllustrationSrc,

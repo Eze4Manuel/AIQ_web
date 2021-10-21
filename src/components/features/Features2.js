@@ -58,7 +58,7 @@ export default () => {
     {
       imageSrc: ShieldIconImage,
       title: "GEOAI",
-      description: "Geospatial Artificial Intelligence (focus on Remote Sensing)"
+      description: "Geospatial Artificial Intelligence (focus on Remote Sensing) AIQ uses remote sensing to gather information about human activity on earth acquired via the analysis of earth imagery and geospatial data that identifies, analyzes and usually shows physical features and spatially referenced activities."
     },
     {
       imageSrc: SupportIconImage,
@@ -79,6 +79,11 @@ export default () => {
       imageSrc: SimpleIconImage,
       title: "SKY-MAKE",
       description: "Machine Learning And Knowledge Extraction"
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "HRSI",
+      description: "High resolution satellite imagery that can be used to improve decision making in all aspects of living ranging from Defence, environment and climate, agriculture, infrastructure engineering and government."
     }
   ];
 
