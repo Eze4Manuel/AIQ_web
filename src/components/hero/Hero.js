@@ -71,7 +71,7 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>Intelligence applied for Sucred interactions </Notification>
+            <Notification>Intelligence applied for secured interactions </Notification>
             <Heading>
               <span></span>
               <br />

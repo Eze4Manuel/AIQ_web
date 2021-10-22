@@ -65,7 +65,7 @@ export default ({ cards = null, heading = "", subheading = "Our Focus", descript
     {
       imageSrc: SupportIconImage,
       title: "Mission",
-      description: "A Focus to provide homegrown solutions to national defense and intelligence related problems"
+      description: "To provide homegrown solutions to national defense and intelligence related problems"
     }    
   ];
 
@@ -87,7 +87,7 @@ export default ({ cards = null, heading = "", subheading = "Our Focus", descript
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  {card.description || ""}
                 </p>
               </span>
             </Card>

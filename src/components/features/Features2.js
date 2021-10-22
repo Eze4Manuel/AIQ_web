@@ -84,13 +84,33 @@ export default () => {
       imageSrc: SimpleIconImage,
       title: "HRSI",
       description: "High resolution satellite imagery that can be used to improve decision making in all aspects of living ranging from Defence, environment and climate, agriculture, infrastructure engineering and government."
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "VAPT",
+      description: "Vulnerability Assessment and Penetration Testing"
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "CyberSecurity Training",
+      description: ""
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Security Operations Center",
+      description: ""
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Network Operations Center",
+      description: ""
     }
   ];
 
   return (
     <Container id="solution">
       <ThreeColumnContainer>
-        <Heading>Our <span tw="text-primary-500">Solutions</span></Heading>
+        <Heading> <span tw="text-primary-500">Our Solutions</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
@@ -100,7 +120,7 @@ export default () => {
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
+                  {card.description || ""}
                 </p>
               </span>
             </Card>

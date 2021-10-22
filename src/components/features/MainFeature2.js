@@ -59,12 +59,12 @@ export default ({
     {
       Icon: BriefcaseIcon,
       title: "Professionalism",
-      description: "We have the best professional solutions people in our work force"
+      description: "We have world-class and proven professionals in our workforce"
     },
     {
       Icon: MoneyIcon,
       title: "Affordable",
-      description: "We offer you the best rate we can - at par with the industry standard."
+      description: "We offer you the best rate and quality in the industry. Value-for-Money!!!"
     }
   ];
 
