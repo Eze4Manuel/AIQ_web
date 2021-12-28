@@ -15,7 +15,7 @@ const Column = tw.div``;
 
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  props.imageContain ? tw`bg-contain bg-no-repeat` : tw`bg-cover`,
+  props.imageContain ? tw`bg-cover bg-no-repeat` : tw`bg-cover`,
   props.imageShadow ? tw`shadow` : tw`shadow-none`,
   tw`hidden lg:block rounded h-144 bg-center`
 ]);
@@ -40,7 +40,7 @@ const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-rel
 export default ({
   subheading = "",
   heading = "Questions",
-  description = "Here are some frequently asked questions about our services and solutions. Should you have any other questions, feel free to reach out via our contact below.",
+  description = "",
   imageSrc = "https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
   imageContain = false,
   imageShadow = true,
@@ -53,24 +53,20 @@ export default ({
   const defaultFaqs = [
     {
       question: "How swift will this be offered to your door step",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+      question:
+        "Real-time data aggregation across multi-source domain is cumbersome and time consuming"
     },
     {
       question: "What is the range your services cover",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+      question:
+        "For us, it’s a basic question: how do you leverage on digital interconnectedness to improve the  intelligence collection and exploitation process?"
     },
     {
       question: "Are AI's costs included in the price ?",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+      question:
+        "A versatile, multi-collaborative approach to provide data-based software solutions and infrastructure that cuts across three aspects of the intelligence cycle. Collections, Processing and Exploitation."
     },
-    {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
-    }
+     
   ];
 
   if (!faqs || faqs.length === 0) faqs = defaultFaqs;
@@ -91,8 +87,8 @@ export default ({
           </Column>
           <Column>
             <FAQContent>
-              {subheading ? <Subheading>{subheading}</Subheading> : null}
-              <Heading>{heading}</Heading>
+              {subheading ? <Subheading>{}</Subheading> : null}
+              <Heading>{}</Heading>
               <Description>{description}</Description>
               <FAQSContainer>
                 {faqs.map((faq, index) => (
@@ -115,7 +111,7 @@ export default ({
                         collapsed: { opacity: 0, height: 0, marginTop: "0px" }
                       }}
                       initial="collapsed"
-                      animate={activeQuestionIndex === index ? "open" : "collapsed"}
+                      animate={activeQuestionIndex === index ? "open" : "open"}
                       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
                     >
                       {faq.answer}

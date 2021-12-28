@@ -12,7 +12,7 @@ import MainFeature3 from "components/features/MainFeature3.js";
 import FAQ from "components/faqs/Faq.js";
 import ContactUsForm from "components/forms/ContactUs.js";
 import Footer from "components/footers/Footer.js";
-import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
+import customerSupportIllustrationSrc from "../images/img14.jpg";
 import { ReactComponent as SvgDotPatternIcon } from "../images/dot-pattern.svg";
 
 
@@ -32,15 +32,13 @@ export default () => (
       <ContentWithPaddingLg>
         <AboutFeature />
         <Features
-          subheading={<Subheading>Features</Subheading>}
+          subheading={<Subheading></Subheading>}
           heading={null}
         />
         <Features2 />
       </ContentWithPaddingLg>
-      <MainFeature3 />
-      <ContentWithPaddingLg>
         <SvgDotPattern3 />
-        <MainFeature2 />
+        <MainFeature3 />
         <SvgDotPattern4 />
         <FAQ
           imageSrc={customerSupportIllustrationSrc}
@@ -54,7 +52,6 @@ export default () => (
           }
         />
         <ContactUsForm />
-      </ContentWithPaddingLg>
     </Container>
     <Footer />
   </>

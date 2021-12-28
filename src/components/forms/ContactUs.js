@@ -52,10 +52,7 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Form action={formAction} method={formMethod}>
-              <Input type="email" name="email" placeholder="Your Email Address" />
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-            </Form>
+             
           </TextContent>
         </TextColumn>
       </TwoColumn>

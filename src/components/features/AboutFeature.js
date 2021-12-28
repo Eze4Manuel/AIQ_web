@@ -2,7 +2,8 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import StatsIllustrationSrc from "images/stats-illustration.svg";
+import StatsIllustrationSrc from '../../images/img13.jpg'
+
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
@@ -16,7 +17,7 @@ const TextColumn = styled(Column)(props => [
 
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-contain bg-no-repeat bg-center h-full`
+  tw`rounded bg-cover bg-no-repeat bg-center h-full`
 ]);
 const TextContent = tw.div`lg:py-0 text-center md:text-left`;
 
@@ -47,7 +48,7 @@ export default ({
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = StatsIllustrationSrc,
-  imageCss = null,
+  imageCss = {width: "100%", transform: "scale(1.0)"},
   imageContainerCss = null,
   imageDecoratorBlob = false,
   imageDecoratorBlobCss = null,
@@ -64,7 +65,8 @@ export default ({
   if (!statistics) statistics = defaultStatistics;
 
   return (
-    <Container>
+    <div id="about">
+      <Container>
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss}>
           {imageInsideDiv ? <Image imageSrc={imageSrc} css={imageCss} /> : <img src={imageSrc} css={imageCss} alt="" />}
@@ -87,5 +89,6 @@ export default ({
         </TextColumn>
       </TwoColumn>
     </Container>
+    </div>
   );
 };
