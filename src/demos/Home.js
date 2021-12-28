@@ -16,12 +16,12 @@ import customerSupportIllustrationSrc from "../images/img14.jpg";
 import { ReactComponent as SvgDotPatternIcon } from "../images/dot-pattern.svg";
 
 
-const SvgDotPattern3 = tw(
-  SvgDotPatternIcon
-)`absolute bottom-0 left-0 transform -translate-x-20 rotate-45 -translate-y-8 -z-10 opacity-25 text-primary-500 fill-current w-24`;
-const SvgDotPattern4 = tw(
-  SvgDotPatternIcon
-)`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+// const SvgDotPattern3 = tw(
+//   SvgDotPatternIcon
+// )`absolute bottom-0 left-0 transform -translate-x-20 rotate-45 -translate-y-8 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+// const SvgDotPattern4 = tw(
+//   SvgDotPatternIcon
+// )`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
 
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 
@@ -37,9 +37,9 @@ export default () => (
         />
         <Features2 />
       </ContentWithPaddingLg>
-        <SvgDotPattern3 />
+        {/* <SvgDotPattern3 /> */}
         <MainFeature3 />
-        <SvgDotPattern4 />
+        {/* <SvgDotPattern4 /> */}
         <FAQ
           imageSrc={customerSupportIllustrationSrc}
           imageContain={true}
@@ -51,7 +51,10 @@ export default () => (
             </>
           }
         />
+        <ContentWithPaddingLg>
+
         <ContactUsForm />
+        </ContentWithPaddingLg>
     </Container>
     <Footer />
   </>
