@@ -13,8 +13,7 @@ import FAQ from "components/faqs/Faq.js";
 import ContactUsForm from "components/forms/ContactUs.js";
 import Footer from "components/footers/Footer.js";
 import customerSupportIllustrationSrc from "../images/img14.jpg";
-import { ReactComponent as SvgDotPatternIcon } from "../images/dot-pattern.svg";
-
+ 
 
 // const SvgDotPattern3 = tw(
 //   SvgDotPatternIcon
