@@ -52,21 +52,20 @@ export default ({
    */
   const defaultFaqs = [
     {
-      question: "How swift will this be offered to your door step",
+      answer: "",
       question:
         "Real-time data aggregation across multi-source domain is cumbersome and time consuming"
     },
     {
-      question: "What is the range your services cover",
+      answer: "",
       question:
         "For us, it’s a basic question: how do you leverage on digital interconnectedness to improve the  intelligence collection and exploitation process?"
     },
     {
-      question: "Are AI's costs included in the price ?",
+      answer: "",
       question:
         "A versatile, multi-collaborative approach to provide data-based software solutions and infrastructure that cuts across three aspects of the intelligence cycle. Collections, Processing and Exploitation."
-    },
-     
+    }
   ];
 
   if (!faqs || faqs.length === 0) faqs = defaultFaqs;

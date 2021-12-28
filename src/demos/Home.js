@@ -7,7 +7,7 @@ import { Container, ContentWithPaddingLg } from "components/misc/Layouts";
 import Features from "components/features/Features.js";
 import AboutFeature from "components/features/AboutFeature.js";
 import Features2 from "components/features/Features2";
-import MainFeature2 from "components/features/MainFeature2.js";
+// import MainFeature2 from "components/features/MainFeature2.js";
 import MainFeature3 from "components/features/MainFeature3.js";
 import FAQ from "components/faqs/Faq.js";
 import ContactUsForm from "components/forms/ContactUs.js";

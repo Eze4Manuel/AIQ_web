@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import Header, { NavLink, NavLinks, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { NavLink, NavLinks, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import img from '../../images/img12.jpg'
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -18,7 +18,7 @@ const Container = styled.div`
   background-image: url(${img});
 `;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-15`;
+// const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-15`;
 
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
